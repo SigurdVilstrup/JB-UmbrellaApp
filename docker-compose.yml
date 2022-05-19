@@ -1,14 +1,14 @@
-version: "3.9"
+version: "4.0"
 
 services:
   umbrella-backend:
-    image: rhandersen/umbrella-backend:latest
+    image: spvav/umbrella-backend:latest
     build: ./backend
     ports:
       - 8080:8080
 
   umbrella-frontend:
-    image: rhandersen/umbrella-frontend:latest
+    image: spvav/umbrella-frontend:latest
     build: ./frontend
     ports:
       - 4200:4200

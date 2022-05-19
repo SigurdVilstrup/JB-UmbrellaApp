@@ -1,8 +1,30 @@
-# JB Code Challenge optional foundation (Code name "Umbrella")
+# JB Code Test
+
+## Requirements / Features
+
+* All new features have unittests
+* Facts are still shown for a fun user experience
+* Closest address is shown / address is sanitized in backend
+* The probability of rain is shown
+* The user story is fulfilled
+
+### Note that
+
+* Some features may require some more refactoring
+
+## To build and run with one command
+
+```bash
+docker-compose up --build
+```
+
+Webbapp can be openened here: [http://localhost:4200](http://localhost:4200)
+
+## JB Code Challenge optional foundation
 
 Optional foundation project for the JB code challenge. The project consists of a frontend and a backend template. Feel free to use the template and change whatever you prefer to solve the challenge.
 
-## Build and run backend
+### Build and run backend (no changes)
 
 With JDK11+ and Maven
 
@@ -12,7 +34,7 @@ mvn package
 java -jar target/umbrella.jar
 ```
 
-## Build and run frontend
+### Build and run frontend (no changes)
 
 With Node 10+ and NPM
 
@@ -22,12 +44,12 @@ npm install
 npm start
 ```
 
-## To run with Docker Compose
+### To run with Docker Compose (no changes)
 
 ```bash
 docker-compose up --build
 ```
 
-## To open the application
+### To open the application
 
 Open this URL in your preferred browser: [http://localhost:4200](http://localhost:4200)
