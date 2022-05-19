@@ -1,0 +1,23 @@
+<form #address="ngForm" class="address-form" (ngSubmit)="onSubmit(address)">
+    <span class="sorry">Sorry, right now, only Denmark is available...</span>
+    <input class="address-form-input inactive" type="country" placeholder="Danmark">
+    <input class="address-form-input" name="address_query" type="text" ngModel placeholder="Vestergade 8, 8600 Silkeborg...">
+    <button type="submit" value="submit">Do i need an umbrella? 🌂</button>
+</form>
+
+
+<!-- Only show if a result has been requested -->
+<div *ngIf="showResult" class="result">
+    <!-- While results from inputs are being loaded -->
+    <ng-template #loading>
+        <img src="/assets/loading-umbrella.gif" width="50%" style="align-self: center;">
+    </ng-template>
+
+    <!-- While response is found -->
+    <div *ngIf="weatherResponse$ | async as response; else loading">
+        <ul>
+            <li><b>Address found:</b> <span class="closest_address"> {{ response.closest_address }} </span></li>
+            <li><b>Chance of rain in the next 6 hours:</b> <span class="probability_of_precipitation"> {{ response.probability_of_precipitation }}</span>%</li>
+        </ul>
+    </div>
+</div>

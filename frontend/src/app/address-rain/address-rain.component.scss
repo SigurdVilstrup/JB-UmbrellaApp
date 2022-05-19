@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+}
+
+.address-form {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.address-form>.sorry {
+    color: lightgray;
+    align-self: center;
+}
+
+.address-form>input {
+    width: 75%;
+    border-radius: 35px;
+    margin: 0.25rem;
+    align-self: center;
+    padding: 1rem;
+}
+
+.address-form>.inactive {
+    cursor: default;
+    pointer-events: none;
+}
+
+.address-form>button {
+    width: 50%;
+    margin: 0.25rem;
+    padding: 1rem;
+    border-radius: 35px;
+    background-color: white;
+    align-self: center;
+    box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: .2);
+}
+
+.result {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.result ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.hide {
+    display: none;
+}
