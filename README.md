@@ -20,8 +20,10 @@ Code test from Jyske Bank, the [foundational code](https://github.com/jb-roa/umb
 ## To get, build, and run with one command
 
 ```bash
-git clone https://github.com/SigurdVilstrup/JB-UmbrellaApp.git; cd .\JB-UmbrellaApp\; docker-compose up --build; start http://localhost:4200;
+git clone https://github.com/SigurdVilstrup/JB-UmbrellaApp.git; cd .\JB-UmbrellaApp\; docker-compose up --build;
 ```
+
+The webapp will be available on the local url: [http://localhost:4200](http://localhost:4200)
 
 ### Prerequisites
 
