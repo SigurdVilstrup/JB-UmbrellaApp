@@ -15,8 +15,25 @@ Code test from Jyske Bank, the [foundational code](https://github.com/jb-roa/umb
 ### Note that
 
 * Some features may require some more refactoring
+* Some error handling in frontend, i.e., when searching "he", there is no error message for bad retrieval.
 
-## To build and run with one command
+## To get, build, and run with one command
+
+```bash
+git clone https://github.com/SigurdVilstrup/JB-UmbrellaApp.git; cd .\JB-UmbrellaApp\; docker-compose up --build; start http://localhost:4200;
+```
+
+### Prerequisites
+
+* Machine has
+  * Git
+  * Node
+  * Java
+  * Maven
+  * Docker
+  * A browser
+
+### To run from cloned repo
 
 ```bash
 docker-compose up --build
