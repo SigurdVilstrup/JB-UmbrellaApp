@@ -1,5 +1,7 @@
 # JB Code Test
 
+Code test from Jyske Bank, the [foundational code](https://github.com/jb-roa/umbrella-app) is from [Rasmus Holm Andersen /bj-roa](https://github.com/jb-roa)
+
 ## Requirements / Features
 
 * All new features have unittests
